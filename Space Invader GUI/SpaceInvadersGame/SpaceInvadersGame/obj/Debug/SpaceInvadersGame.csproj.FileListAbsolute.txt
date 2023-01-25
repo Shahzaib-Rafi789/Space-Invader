@@ -1,0 +1,13 @@
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\bin\Debug\SpaceInvadersGame.exe.config
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\bin\Debug\SpaceInvadersGame.exe
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\bin\Debug\SpaceInvadersGame.pdb
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.csproj.AssemblyReference.cache
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.Properties.Resources.resources
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.csproj.GenerateResource.cache
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.csproj.CoreCompileInputs.cache
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.exe
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.pdb
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\bin\Debug\EZInput.dll
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\bin\Debug\EZInput.xml
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.Game.resources
+D:\Space Invaders\SpaceInvadersGame\SpaceInvadersGame\obj\Debug\SpaceInvadersGame.csproj.CopyComplete

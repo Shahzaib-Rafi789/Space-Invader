@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F04EC52-DF95-4F53-B579-7C65C456F57A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SpaceInvadersGame</RootNamespace>
+    <AssemblyName>SpaceInvadersGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EZInput, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assets\Bonus\kenvector_future.ttf" />
+    <None Include="Resources\Assets\Bonus\kenvector_future_thin.ttf" />
+    <None Include="Resources\images %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2815%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerShip2_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images__17_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assets\PNG\Enemies\SEnemyShip3.png" />
+    <None Include="Resources\Assets\PNG\Enemies\SEnemyShip2.png" />
+    <None Include="Resources\Assets\PNG\Enemies\SEnemyShip1.png" />
+    <None Include="Resources\PlasLaser-_3_-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\Lasers\laserRed03.png" />
+    <None Include="Properties\Assets\PNG\Lasers\laserRed13.png" />
+    <None Include="Resources\lasersSheet.jpg" />
+    <None Include="Properties\Assets\PNG\Enemies\output-onlinegiftools.gif" />
+    <None Include="Properties\Assets\PNG\Enemies\images-_16_-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\Enemies\images-_15_-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\Enemies\images__18_-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\Enemies\images__17_-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\Enemies\images__16_-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\Enemies\boss-removebg-preview.png" />
+    <None Include="Properties\Assets\PNG\PLAYERLVL3.png" />
+    <None Include="Properties\Assets\PNG\PLAYERLVL2.png" />
+    <None Include="Properties\Assets\PNG\PLAYERLVL1.png" />
+    <Content Include="Resources\Assets\Backgrounds\black.png" />
+    <Content Include="Resources\Assets\Backgrounds\blue.png" />
+    <Content Include="Resources\Assets\Backgrounds\darkPurple.png" />
+    <Content Include="Resources\Assets\Backgrounds\purple.png" />
+    <None Include="Resources\BgSpsce.png" />
+    <None Include="Resources\Assets\Backgrounds\Space BAckgroiundimage_1592602.jpg" />
+    <Content Include="Resources\Assets\Bonus\sfx_laser1.ogg" />
+    <Content Include="Resources\Assets\Bonus\sfx_laser2.ogg" />
+    <Content Include="Resources\Assets\Bonus\sfx_lose.ogg" />
+    <Content Include="Resources\Assets\Bonus\sfx_shieldDown.ogg" />
+    <Content Include="Resources\Assets\Bonus\sfx_shieldUp.ogg" />
+    <Content Include="Resources\Assets\Bonus\sfx_twoTone.ogg" />
+    <Content Include="Resources\Assets\Bonus\sfx_zap.ogg" />
+    <Content Include="Resources\Assets\license.txt" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip1_damage1.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip1_damage2.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip1_damage3.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip2_damage1.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip2_damage2.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip2_damage3.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip3_damage1.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip3_damage2.png" />
+    <Content Include="Resources\Assets\PNG\Damage\playerShip3_damage3.png" />
+    <Content Include="Resources\Assets\PNG\download__1_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire00.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire01.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire02.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire03.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire04.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire05.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire06.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire07.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire08.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire09.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire10.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire11.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire12.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire13.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire14.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire15.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire16.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire17.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire18.png" />
+    <Content Include="Resources\Assets\PNG\Effects\fire19.png" />
+    <Content Include="Resources\Assets\PNG\Effects\shield1.png" />
+    <Content Include="Resources\Assets\PNG\Effects\shield2.png" />
+    <Content Include="Resources\Assets\PNG\Effects\shield3.png" />
+    <Content Include="Resources\Assets\PNG\Effects\speed.png" />
+    <Content Include="Resources\Assets\PNG\Effects\star1.png" />
+    <Content Include="Resources\Assets\PNG\Effects\star2.png" />
+    <Content Include="Resources\Assets\PNG\Effects\star3.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\boss-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlack1.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlack2.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlack3.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlack4.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlack5.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlue1.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlue2.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlue3.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlue4.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyBlue5.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyGreen1.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyGreen2.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyGreen3.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyGreen4.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyGreen5.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyRed1.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyRed2.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyRed3.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyRed4.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\enemyRed5.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\images %284%29.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\images-_15_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\images-_16_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\images__16_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\images__17_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\images__18_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\JEROM_bossB2_CC-BY-3_0.png" />
+    <Content Include="Resources\Assets\PNG\Enemies\output-onlinegiftools.gif" />
+    <Content Include="Resources\Assets\PNG\images-_1_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\images__20_-removebg-preview.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue01.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue02.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue03.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue04.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue05.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue06.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue07.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue08.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue09.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue10.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue11.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue12.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue13.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue14.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue15.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserBlue16.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen01.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen02.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen03.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen04.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen05.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen06.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen07.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen08.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen09.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen10.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen11.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen12.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen13.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen14.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen15.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserGreen16.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed01.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed02.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed03.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed04.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed05.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed06.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed07.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed08.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed09.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed10.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed11.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed12.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed13.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed14.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed15.png" />
+    <Content Include="Resources\Assets\PNG\Lasers\laserRed16.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_big1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_big2.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_big3.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_big4.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_med1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_med3.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_small1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_small2.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_tiny1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorBrown_tiny2.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_big1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_big2.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_big3.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_big4.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_med1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_med2.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_small1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_small2.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_tiny1.png" />
+    <Content Include="Resources\Assets\PNG\Meteors\meteorGrey_tiny2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beam6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beamLong1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\beamLong2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitBlue_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitGreen_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitRed_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\cockpitYellow_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\engine1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\engine2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\engine3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\engine4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\engine5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun00.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun01.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun02.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun03.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun04.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun05.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun06.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun07.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun08.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun09.png" />
+    <Content Include="Resources\Assets\PNG\Parts\gun10.png" />
+    <Content Include="Resources\Assets\PNG\Parts\scratch1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\scratch2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\scratch3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\turretBase_big.png" />
+    <Content Include="Resources\Assets\PNG\Parts\turretBase_small.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingBlue_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingGreen_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingRed_7.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_0.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_1.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_2.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_3.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_4.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_5.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_6.png" />
+    <Content Include="Resources\Assets\PNG\Parts\wingYellow_7.png" />
+    <Content Include="Resources\Assets\PNG\playerShip1_blue.png" />
+    <Content Include="Resources\Assets\PNG\playerShip1_green.png" />
+    <Content Include="Resources\Assets\PNG\playerShip1_orange.png" />
+    <Content Include="Resources\Assets\PNG\playerShip1_red.png" />
+    <Content Include="Resources\Assets\PNG\playerShip2_blue.png" />
+    <Content Include="Resources\Assets\PNG\playerShip2_green.png" />
+    <Content Include="Resources\Assets\PNG\playerShip2_orange.png" />
+    <Content Include="Resources\Assets\PNG\playerShip2_red.png" />
+    <Content Include="Resources\Assets\PNG\playerShip3_blue.png" />
+    <Content Include="Resources\Assets\PNG\playerShip3_green.png" />
+    <Content Include="Resources\Assets\PNG\playerShip3_orange.png" />
+    <Content Include="Resources\Assets\PNG\playerShip3_red.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\bold_silver.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\bolt_bronze.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\bolt_gold.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\pill_blue.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\pill_green.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\pill_red.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\pill_yellow.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupBlue.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupBlue_bolt.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupBlue_shield.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupBlue_star.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupGreen.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupGreen_bolt.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupGreen_shield.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupGreen_star.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupRed.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupRed_bolt.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupRed_shield.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupRed_star.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupYellow.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupYellow_bolt.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupYellow_shield.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\powerupYellow_star.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\shield_bronze.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\shield_gold.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\shield_silver.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\star_bronze.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\star_gold.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\star_silver.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\things_bronze.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\things_gold.png" />
+    <Content Include="Resources\Assets\PNG\Power-ups\things_silver.png" />
+    <Content Include="Resources\Assets\PNG\ufoBlue.png" />
+    <Content Include="Resources\Assets\PNG\ufoGreen.png" />
+    <Content Include="Resources\Assets\PNG\ufoRed.png" />
+    <Content Include="Resources\Assets\PNG\ufoYellow.png" />
+    <Content Include="Resources\Assets\PNG\UI\buttonBlue.png" />
+    <Content Include="Resources\Assets\PNG\UI\buttonGreen.png" />
+    <Content Include="Resources\Assets\PNG\UI\buttonRed.png" />
+    <Content Include="Resources\Assets\PNG\UI\buttonYellow.png" />
+    <Content Include="Resources\Assets\PNG\UI\cursor.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral0.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral1.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral2.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral3.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral4.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral5.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral6.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral7.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral8.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeral9.png" />
+    <Content Include="Resources\Assets\PNG\UI\numeralX.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife1_blue.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife1_green.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife1_orange.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife1_red.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife2_blue.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife2_green.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife2_orange.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife2_red.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife3_blue.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife3_green.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife3_orange.png" />
+    <Content Include="Resources\Assets\PNG\UI\playerLife3_red.png" />
+    <Content Include="Resources\Assets\preview.png" />
+    <Content Include="Resources\Assets\sample.png" />
+    <Content Include="Resources\Assets\Spritesheet\sheet.png" />
+    <Content Include="Resources\Assets\Spritesheet\sheet.xml" />
+    <Content Include="Resources\Assets\Vector\sheet.svg" />
+    <Content Include="Resources\Assets\Vector\sheet.swf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
